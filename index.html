@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>IN4MALS</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand title" href="#">IN4MALS</a>
+    </div>
+    <div id="btnn">
+      <button class="bt">
+        Home
+      </button>
+      <button class="bt active">
+        Department
+      </button>
+      <button class="bt">
+        Events
+      </button>
+      <button class="bt">
+        About Us
+      </button>
+    </div>
+  </nav>
+  <div class="content">
+    <div class="photo">
+      <img src="b.jpg" alt="" width="150">
+      <img src="c.jpg" alt="" width="150">
+      <img src="d.jpg" alt="" width="150">
+    </div>
+    <div class="text">
+      <h3>My Name</h3>
+      <p>Something that nurtures paves the way to enlightenment. In4mals is one such family of millenials where multiple
+        platforms provide one with innumerable opportunities. It is a society sculpted with passion, determination and
+        calibre. We open new portals for talented youngsters and serve as the wind beneath their wings, providing them
+        confidence to soar high and assert opinions with conviction. What we treasure the most is our work ethic- which
+        propels us to empower every individual irrespective of their background. Hence, we are forging ahead on this
+        auspicious journey with the belief that creation is perpetual and that is what will glitter through this endless
+        chronicle of being and becoming.
+      </p>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th class="name">Name</th>
+      <th class="dep">Department</th>
+      <th class="pos">Position</th>
+    </tr>
+    <tr>
+      <td class="name">Mehuli Saha</td>
+      <td class="dep">Editing</td>
+      <td class="pos">Member</td>
+    </tr>
+    <tr>
+      <td class="name">Shutismita Hazarika</td>
+      <td class="dept">Coding</td>
+      <td class="pos">Member</td>
+    </tr>
+    <tr>
+      <td class="name">Arkajyoti Karmakar</td>
+      <td class="dept">Gaming</td>
+      <td class="pos">Coordinator</td>
+    </tr>
+    <tr>
+      <td class="name">Sanskriti</td>
+      <td class="dept">Photography</td>
+      <td class="pos">Member</td>
+    </tr>
+    <tr>
+      <td class="name">Luv</td>
+      <td class="dept">Coding</td>
+      <td class="pos">Member</td>
+    </tr>
+    <tr>
+      <td class="name">Jayashree</td>
+      <td class="dept">Creative Writing</td>
+      <td class="pos">Member</td>
+    </tr>
+  </table>
+</body>
+<script>
+  let a = document.getElementById("btnn");
+  let num = a.getElementsByClassName("bt");
+  for (let i = 0; i < num.length; i++) {
+    num[i].addEventListener("click", function () {
+      let current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+</html>
