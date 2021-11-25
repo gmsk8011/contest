@@ -66,8 +66,9 @@ th{
     width: 300px;
     text-align: center;
     padding: 15px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 15px 15px 0px 0px;
+    border-collapse: inherit;
 }
 td{
     background-color: lightgray;
@@ -75,10 +76,8 @@ td{
     width: 300px;
     text-align: center;
     padding: 15px;
-    border: 2px solid white;
-}
-.dep{
-    width: 100px;
+    border: 1px solid white;
+    border-collapse: inherit;
 }
 tr:hover{
     opacity: 0.7;
@@ -89,4 +88,5 @@ tr:hover{
 table{
     margin-left: 300px;
     margin-top: -200px;
+    border-collapse: inherit;
 }
